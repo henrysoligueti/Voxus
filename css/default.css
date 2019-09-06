@@ -1,0 +1,73 @@
+/*DEFAULT*/
+body.cadastro {background-color:#f5f7fa!important;background-image:url(../img/bg.svg);background-size:100%;background-repeat:no-repeat;background-position:bottom;font-family:'Roboto', sans-serif!important;color:#333;font-size:14px;}
+body.cadastro h1 {font-size:32px;line-height:42px;font-weight:500;margin-bottom:17px;}
+body.cadastro p {color:#748296;margin:0;line-height:26px;}
+body.cadastro ul {list-style:none;}
+body.cadastro a:hover {text-decoration:none;}
+body.cadastro .container {width:960px;max-width:100%;}
+::placeholder {color:rgba(116,130,150,0.4);opacity:1;}
+:-ms-input-placeholder {color:rgba(116,130,150,0.4);}
+::-ms-input-placeholder {color:rgba(116,130,150,0.4);}
+
+/*CORES*/
+:root {
+	--c-blue:#007bff;
+	--c-error:#e03064;
+}
+
+/*HEADER*/
+.header {background:#fff;padding:10px 0;line-height:35px;border-bottom:1px solid rgba(45,58,64,0.1);}
+.header img {padding:10px 0 4px;}
+
+/*CADASTRO*/
+.title {width:600px;max-width:90%;margin:60px auto 0;text-align:center;}
+.box_form {width:620px;max-width:90%;margin:67px auto 50px;background:#fff;padding:30px;border-radius:4px;box-shadow:0 4px 40px 0 rgba(116,130,150,0.2);text-align:center;}
+.glyphicon {position: relative;top: 1px;display: inline-block; font-family: 'Glyphicons Halflings';font-style: normal;font-weight: 400;line-height: 1;-webkit-font-smoothing: antialiased;}
+form {width:266px;max-width:100%;margin:0 auto;}
+form .row {margin:0;}
+form .input {position:relative;width:100%;margin-bottom:30px;}
+form .input .error {position:absolute;top:100%;left:0;background:var(--c-error);color:#fff;font-size:11px;padding:2px;text-indent:15px;width:70%;text-align:left;border-bottom-left-radius:4px;border-bottom-right-radius:4px;}
+form .countries {padding:0;}
+form .countries .dropdown-toggle i {position:relative;left:5px;top:0;}
+form #telefone {padding:0;}
+form #telefone input {border-bottom-left-radius:0;border-top-left-radius:0;border-bottom-right-radius:3px;border-top-right-radius:3px;} 
+form .input input[type=text] {width:100%;border:1px solid rgba(116,130,150,0.2);font-size:16px;border-radius:3px;height:43px;line-height:43px;padding:0 10px;position:relative;box-shadow:none;outline:0 none;}
+form .input input[type=text]:focus {border:1px solid var(--c-blue);}
+form .input label {position:absolute;left:10px;top:-7px;background:#fff;font-size:14px;line-height:14px;display:none;padding:0 5px;z-index:2;color:#2f3a40!important;}
+form .input label.correct {display:block!important;color:rgba(45,58,64,0.3)!important;}
+form .dropdown-menu.show {width:100%;min-width:180px;box-shadow:0 6px 12px rgba(0,0,0,.175);}
+form .dropdown .dropdown-item {cursor:pointer;font-size:16px;}
+form .dropdown-item.active, form .dropdown-item:active {background:#f5f4f4;color:#333;}
+form #countries button.dropdown-toggle {border-right:none;border-radius:0;border-top-left-radius:3px;border-bottom-left-radius:3px;}
+form button.dropdown-toggle {width:100%;border:1px solid rgba(116,130,150,0.2);font-size:16px;background:transparent;color:rgba(116,130,150,0.4);border-radius:3px;height:43px;line-height:43px;padding:0 10px;text-align:left;position:relative;}
+form button.dropdown-toggle::after {position:absolute;right:10px;top:50%;margin-top:-.125em;color:#2D3A40;}
+form button.dropdown-toggle.selected {color:#333;}
+form button[type=submit] {width:250px;max-width:96%;font-size:16px;height:43px;background:#14e298;color:#fff;font-weight:500;margin:0 auto;border:none;border-radius:3px;}
+form button[type=submit]:hover {background:#23f7ab;}
+form button[type=submit].success {border:1px solid #14e298;background:transparent;color:#14e298;}
+form button:focus {box-shadow:none;outline:0 none;}
+.termos {width:620px;max-width:90%;margin:0 auto;text-align:center;}
+.termos a {text-decoration:underline;}
+.info {display:none;width:312px;max-width:100%;line-height:36px!important;text-align:center;margin:20px auto 0!important;background:#f5f7fa;color:#2d3a40!important;}
+
+/*FOOTER*/
+.footer {width:100%;margin:80px 0 0;}
+.footer .row {border-top:2px solid #d6dade;padding-top:20px;}
+.footer .logo_footer {padding-left:0;}
+.footer ul {padding:0 0 0 10px;}
+.footer ul li {display:inline-block;padding:0 10px;}
+.footer ul li a {color:#748296;}
+.footer ul li a:hover {color:var(--c-blue);}
+
+/*MOBILE*/
+@media screen and (max-width: 1200px) {
+	body.cadastro h1 {font-size:24px;line-height:32px;}
+	.title {margin-top:50px;}
+	.box_form {margin-top:57px;}
+	form {width:100%;}
+	form .countries {width:25%;}
+	form #telefone {width:75%;} 
+	.footer .logo_footer {padding-left:15px;}
+	.footer ul {padding:0 0 20px;}
+	.footer ul li {padding:10px 0 0;width:100%;}
+}

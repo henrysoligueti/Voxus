@@ -1,0 +1,129 @@
+<html lang="pt_BR">
+	<head>
+		<title>Experimente grátis e aumente suas vendas - Voxus</title>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#007bff">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#007bff">
+		<meta name="msapplication-navbutton-color" content="#007bff">
+		<meta name="description" content="Desafio FrontEnd Voxus">
+		<meta name="keywords" content="desafio, frontend, voxus, henry, victor, soligueti">
+		<meta name="author" content="Henry Victor Soligueti"> 
+		<link rel="shortcut icon" href="img/favicon.ico" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/default.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600" rel="stylesheet">
+
+		<!--BOOTSRAP-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-formhelpers.min.css">
+		<script src="js/bootstrap-formhelpers.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<!--COUNTRY PLUGIN-->
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-select-country-4.1.0/dist/css/bootstrap-select-country.min.css">
+		<script src="assets/bootstrap-select-country-4.1.0/dist/js/bootstrap-select-country.min.js"></script>	
+
+		<!--MASKS PLUGIN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>		        
+	</head>
+
+	<body class="cadastro">
+		<div class="header mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2">
+						<a href="https://www.voxus.com.br"><img src="img/logo.svg" title="Voxus"></a>
+					</div>
+				</div>
+			</div>
+		</div>	
+			
+		<div class="title">
+			<h1>Você está a poucos passos de otimizar suas campanhas!</h1>
+			<p class="text-center">Queremos conhecer mais sobre sua empresa para melhorar sua experiência com a Voxus.</p>
+		</div>
+
+		<div class="box_form">
+			<form>
+				<div class="input" id="nome">
+					<label>Nome Completo</label>
+					<input type="text" placeholder="Nome completo">
+				</div>
+				<div class="row input">
+					<div class="col-md-3 countries" id="countries">
+						<div class="dropdown">
+							<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="+55">
+								<i class="glyphicon bfh-flag-BR"></i>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<li tabindex="-1" data-option="BR" value="55" class="dropdown-item active"><i class="glyphicon bfh-flag-BR"></i>Brasil</li>
+								<li tabindex="-1" data-option="DK" value="45" class="dropdown-item"><i class="glyphicon bfh-flag-DK"></i>Dinamarca</li>
+								<li tabindex="-1" data-option="ES" value="34" class="dropdown-item"><i class="glyphicon bfh-flag-ES"></i>Espanha</li>
+								<li tabindex="-1" data-option="GB" value="44" class="dropdown-item"><i class="glyphicon bfh-flag-GB"></i>Reino Unido</li>
+								<li tabindex="-1" data-option="US" value="1" class="dropdown-item"><i class="glyphicon bfh-flag-US"></i>Estados Unidos</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-9" id="telefone">						
+						<label>Telefone</label>
+						<input type="text" placeholder="Telefone">						
+					</div>
+				</div>
+				<div class="input" id="email">
+					<label>Endereço de e-mail</label>
+					<input type="text" placeholder="Endereço de e-mail">
+				</div>
+				<div class="input" id="empresa">
+					<label>Nome da empresa</label>
+					<input type="text" placeholder="Nome da empresa">
+				</div>
+				<div class="input" id="url">
+					<label>URL do site</label>
+					<input type="text" placeholder="URL do site">
+				</div>
+				<div class="input" id="verba">
+					<div class="dropdown">
+						<button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="">
+							Verba mensal em mídia
+						</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<li class="dropdown-item"><= R$5.000</li>
+							<li class="dropdown-item">>= R$5.001 e <= R$30.000</li>
+							<li class="dropdown-item">>= R$30.001 e <= R$100.000</li>
+							<li class="dropdown-item">>= R$100.001 e <= R$500.000</li>
+							<li class="dropdown-item">>= R$500.001</li>
+							<li class="dropdown-item">Não se aplica</li>
+						</ul>
+					</div>
+				</div>
+				<button type="submit" class="send">Experimentar gratuitamente</button>
+			</form>
+			<p class="info">Entraremos em contato em 24hs úteis.</p>
+		</div>
+
+		<div class="termos">
+			<p>*Para usar o trial grátis você precisa ser um e-commerce e concordar com os termos e requisitos do trial gratuito. Saiba mais em: <a href="#" title="Termos e requisitos de trial gratuito">Termos e requisitos e trial gratuito</a></p>
+		</div>
+
+    	<div class="footer">
+    		<div class="container">
+				<div class="row">
+					<div class="col-md-1 logo_footer">
+						<a href="https://www.voxus.com.br"><img src="img/logo_gray.svg" title="Voxus"></a>
+					</div>
+					<div class="col-md-8">
+						<ul>
+							<li><a href="#" title="Termos de serviço">Termos de serviço</a></li>
+							<li><a href="#" title="Política de privacidade">Política de privacidade</a></li>
+							<li><a href="#" title="Opções de anúncio">Opções de anúncio</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+    	</div>
+	</body>	
+</html>
